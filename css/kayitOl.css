@@ -1,0 +1,109 @@
+body{
+    background-color: #1C1C1C;
+    background-image: url(3dBackLogin.png);
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.navbar-brand{
+    display: flex;
+    justify-content: center;
+}
+
+.bodyContainer{
+    color: white;
+}
+
+.bodyContain{
+    padding-top: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodyContain *{
+    align-items: center;
+    justify-content: center;
+}
+
+.bodyTitle{
+    font-size: 25px;
+    display: flex;
+}
+
+.d-flex{
+    width: 50%;
+}
+
+.inputs{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.bodyContain a{
+    border-radius: 20px;
+    width: 100px;
+}
+
+.bodyContain input{
+    border-radius: 15px;
+}
+
+.kayitOl{
+    position: relative;
+    bottom: 60px;
+    color: white;
+    font-size: 15px;
+}
+
+.kayitOl a{
+    text-decoration: none;
+    color: white;
+}
+
+.checkedBox{
+    margin-bottom: 50px;
+    justify-content: space-between;
+    display: flex;
+    width: 290px;
+    background-color: #3c617c;
+    border-radius: 50px;
+    padding: 3px;
+}
+
+.checkedBox *{
+    border: none!important;
+}
+
+.btn-check:active+.btn-secondary, .btn-check:checked+.btn-secondary, .btn-secondary.active, .btn-secondary:active, .show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #304e63!important;
+    border-color: none!important;
+    font-weight: 600!important;
+    border-radius: 50px!important;
+    padding: 10px 30px 10px 30px!important;
+    font-size: 13px!important;
+}
+
+.btn-secondary{
+    color: #fff;
+    background-color: #3c617c!important;
+    /* border-color: none!important; */
+    border-radius: 50px!important;
+    padding: 10px 30px 10px 30px!important;
+    font-size: 13px!important;
+}
+
+.btn-outline-primary {
+    color: #ffffff!important;
+    border-color: #ffffff!important;
+}
+
+.btn-outline-primary:hover {
+    border-color: none!important;
+}
+
+@media only screen and (max-width: 992px) {
+
+}

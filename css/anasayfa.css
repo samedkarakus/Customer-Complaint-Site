@@ -1,0 +1,49 @@
+body{
+    background-color: #1C1C1C;
+    background-image: url(3dBack.png);
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-nav{
+    margin-left: 25%;
+}
+
+.navbar-nav *{
+    width: 200px;
+}
+
+.navbar-nav button{
+    width: 100px;
+    border-radius: 20px;
+}
+
+.navbar-brand{
+    display: flex;
+    justify-content: center;
+}
+
+.bodyContainer{
+    color: white;
+}
+
+.bodyContain{
+    width: 60%;
+    margin-left: 15%;
+    padding-top: 10%;
+}
+
+.bodyTitle{
+    font-size: 4vw;
+}
+
+.d-flex{
+    margin-top: 8%;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar-nav{
+        margin-left: 0%;
+    }
+}

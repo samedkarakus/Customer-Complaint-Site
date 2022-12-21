@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Profilim</title>
+    <style>
+      /* Buraya CSS kodlarınızı yazın */
+
+      /* Stil tanımları */
+      body {
+        font-family: sans-serif;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      nav {
+        background-color: #eee;
+        padding: 10px;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav li {
+        flex: 1;
+        text-align: center;
+      }
+
+      nav a {
+        color: #333;
+        display: block;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        background-color: #ccc;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      section {
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        margin: 0;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Profilim</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#hakkimda">Hakkımda</a></li>
+        <li><a href="#deneyimlerim">Deneyimlerim</a></li>
+        <li><a href="#egitimlerim">Eğitimlerim</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="hakkimda">
+        <h2>Hakkımda</h2>
+        <!-- Buraya profil resminizi ve kısa bir tanıtım yazınızı ekleyin -->
+        <img src="profil.jpg" alt="Profil resmim" width="200" height="200">
+        <p>Merhaba, ben Ömer. Yılların verdiği deneyimle programlama dillerini öğrendim ve bugün bu alanda çalışmaktayım.</p>
+      </section>
+      <section id="deneyimlerim">
+        <h2>Deneyimlerim</h2>
+        <h3>Programlama Dilleri</h3>
+        <ul>
+          <li>Java</li>
+          <li>C</li>
+          <li>C++</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+        </ul>
+        <h3>Veritabanı</h3>
+        <ul>
+          <li>MySQL</li>
+          <li>PostgreSQL</li>
+        </ul>
+        <h3>Web Geliştirme</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>PHP</li>
+          <li>Ruby on Rails</li>
+        </ul>
+      </section>
+      <section id="egitimlerim">
+        <h2>Eğitimlerim</h2>
+        <h3>Lisans</h3>
+        <ul>
+          <li>Bilgisayar Mühendisliği, XYZ Üniversitesi</li>
+        </ul>
+        <h3>Önlisans</h3>
+        <ul>
+          <li>Bilgisayar Programcılığı, ABC Üniversitesi</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>İletişim: <a href="mailto:omer@example.com">omer@example.com</a></p>
+      <p>Copyright 2022</p>
+    </footer>
+    <script>
+        // Sayfayı yüklediğinde çalışacak fonksiyon
+        window.onload = function() {
+        // Tüm linkleri seç
+        var links = document.querySelectorAll("a");
+        // Her link için düzenleme yap
+        for (var i = 0; i < links.length; i++) {
+            // Linklerin hepsine tıklama olayı ekle
+            links[i].addEventListener("click", function(event) {
+            // Tıklama olayını iptal et
+            event.preventDefault();
+            // Linkin hedefini al
+            var target = this.getAttribute("href");
+            // Hedef kısmına animasyonlu bir şekilde kaydır
+            smoothScroll(target, 1000);
+            });
+        }
+        };
+
+        // Kaydırma animasyonu fonksiyonu
+        function smoothScroll(target, duration) {
+        // Hedef nesnesini al
+        var target = document.querySelector(target);
+        // Hedef nesnenin y konumunu al
+        var targetPosition = target.getBoundingClientRect().top;
+        // Başlangıç konumunu al
+        var startPosition = window.pageYOffset;
+        // Kaydırma uzunluğunu hesapla
+        var distance = targetPosition - startPosition;
+        // Kaydırma hızını hesapla
+        var startTime = null;
+
+        function animation(currentTime) {
+            // Başlangıç zamanını al
+            if (startTime === null) startTime = currentTime;
+            // Geçen süreyi hesapla
+            var timeElapsed = currentTime - startTime;
+            // Hedefin y konumunu hesapla
+            var run = ease(timeElapsed, startPosition, distance, duration);
+            // Sayfayı kaydır
+            window.scrollTo(0, run);
+            // Animasyon bitmediyse tekrar çağır    
+            if (timeElapsed < duration) requestAnimationFrame(animation);
+        }
+
+        // Ease-in-out fonksiyonu
+        function ease(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t + b;
+            t--;
+            return -c / 2 * (t * (t - 2) - 1) + b;
+        }
+
+        // Animasyonu başlat
+        requestAnimationFrame(animation);
+        }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+body{
+    background-color: #1C1C1C;
+    background-image: url(3dBackProfile.png);
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.navbar-nav{
+    justify-content: space-between;
+}
+
+.navbar-nav button{
+    width: 100px;
+    border-radius: 20px;
+}
+
+.nav-link{
+    float: right;
+}
+
+.navbar-brand{
+    display: flex;
+    justify-content: center;
+}
+
+.container *{
+    justify-content: space-between;
+}
+
+.bodyContainer{
+    color: white;
+}
+
+.bodyContain{
+    width: 60%;
+    margin-left: 15%;
+    padding-top: 10%;
+}
+
+.bodyTitle{
+    font-size: 4vw;
+}
+
+.d-flex{
+    margin-top: 8%;
+}
+
+.profileBackContainer{
+    background-color: white;
+    height: 200px;
+    opacity: 75%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.circleAndName *{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 500px;
+    position: absolute;
+    bottom: 350px;
+    background-image: url(firma.png);
+}
+
+.profileRectangule{
+    width: 80%;
+}
+
+.circleAndName{
+    display: flex;
+}
+
+.profileRectangule *{
+    display: flex;
+}
+
+.profileBtns{
+    padding-left: 220px;
+    width: 60%;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.circleAndName h1{
+    padding-left: 220px;
+    padding-top: 15px;
+    color: white;
+}
+
+.btns{
+    justify-content: space-between;
+}
+
+.tableSikayet{
+    margin-top: 40px;
+    width: 75%;
+    margin-bottom: 50px!important;
+}
+
+.firmaArama{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.form-control{
+    border-radius: 15px!important;
+}
+
+.btn{
+    border-radius: 10px!important;
+}
+
+.duzenlemeButonlari{
+    margin-bottom: 100px;
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.duzenlemeButonlari *{
+    width: 150px;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar-nav{
+        margin-left: 0%;
+    }
+}
