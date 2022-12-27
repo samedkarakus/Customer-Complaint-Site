@@ -1,0 +1,12 @@
+.navbar-nav *{
+    margin: 15px;
+}
+
+.row{
+    margin-bottom: 60px;
+}
+
+.footer{
+ background-color: black;
+ width: 100%;
+}
