@@ -4,7 +4,6 @@ body{
     background-size: cover;
     background-position: center center;
     font-family: 'Poppins', sans-serif;
-    color: white;
 }
 
 .navbar-nav{
@@ -94,6 +93,14 @@ body{
     color: white;
 }
 
+.btn-success{
+    background-color: #398d67!important;
+}
+
+.btn-danger{
+    background-color: #e24646!important;
+}
+
 .btns{
     justify-content: space-between;
 }
@@ -107,7 +114,7 @@ body{
 .firmaArama{
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 60px;
 }
 
 .form-control{
@@ -131,10 +138,32 @@ body{
 
 
 .sikayetTable{
-    padding-top: 50px;
+    padding-top: 30px;
     justify-content: space-between;
     margin: auto;
     padding-bottom: 100px;
+}
+
+.sikayetTable *{
+    background-color: #1e2631;
+}
+
+.card-text{
+    color: white;
+    opacity: 50%;
+    font-weight: 200;
+}
+
+.card-body{
+    color: white;
+}
+
+.sikayetButtonlari *{
+    font-weight: 800;
+}
+
+.card{
+    border-radius: 20px!important;
 }
 
 @media only screen and (max-width: 992px) {

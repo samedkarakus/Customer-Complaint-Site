@@ -23,7 +23,7 @@
             </button>
         <div class="navbar-collapse" style="flex-direction: row-reverse;" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="anasayfa.html">Anasayfa</a>
+              <a class="nav-link" aria-current="page" href="dashboardMusteri.html">Gündemdeki Şikayetler</a>
             </div>
           </div>
         </div>          
@@ -42,125 +42,117 @@
   </div>
     <div class="sikayetTable w-75">
       <div class="card mb-3" id="silinecekOge" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-header bg-transparent" id="durumSon" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
         <div class="card-body">
           <h5 class="card-title">Beko Fırın Tellerinin Birine Isı Gitmiyor!</h5>
           <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor sadece bir tel ısınıyor bu normal bir şey mi acaba çünkü çift telin ikisininde kırmızı olması ısınması gerekir anlam veremedim yardımcı olur musunuz.</p>
-        </div>
-        <div class="card-footer bg-transparent m-auto">
-          <td style="width: 100px;"><button type="button" class="btn btn-success" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-          <td style="width: 50px;"><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
+          <h5 class="card-title" id="answer"></h5>
+          <p class="card-text" id="answerDetails"></p>
+          <center><div class="card-footer bg-transparent">
+            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
+            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
+          </div></center>
         </div>
       </div>
       <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon1" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-header bg-transparent" id="durumSon1" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
         <div class="card-body">
           <h5 class="card-title">Silivri Beko Bayii Hediyemi Vermiyor!</h5>
           <p class="card-text">Beko Silivri bayisinden 4 yıl önce kurutma makinesi aldım. Eski faturaları atmak için baktığımda bu alışverişimin hediyesi olarak kredi kartımın slipinden Beko blender hediye olarak kazandığımı alt kısmında gördüm. Bana hediyeli bir satış olduğu bilgisini vermediler. Herhangi bir hediye teslim almadım. Bayii aradım. Kibarca durumu anlattım.</p>
-        </div>
-        <div class="card-footer bg-transparent m-auto">
-          <td style="width: 100px;"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-          <td style="width: 50px;"><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
-        </div>
+          <center><div class="card-footer bg-transparent">
+            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
+            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
+          </div></center>        </div>
       </div>
       <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
         <div class="card-body">
           <h5 class="card-title">Beko TV Kurulum Problemi</h5>
           <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
-        </div>
-        <div class="card-footer bg-transparent m-auto">
-          <td style="width: 100px;"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-          <td style="width: 50px;"><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
-        </div>
+          <center><div class="card-footer bg-transparent">
+            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
+            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
+          </div></center>        </div>
       </div>
       <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-body">
+          <h5 class="card-title">Beko Ürününün Arkasında Durmaması</h5>
+          <p class="card-text">Evimin tüm eşyalarını Beko'dan aldığım gibi çamaşır makinesinde Gebze Piranlar mağazasından 11 ay önce satın aldım. Aldığım günden beri makinedeki çamaşırlar yumuşatıcı kokmuyordu. Bunun üzerine teknik servise başvurduk ilk geldiğinde sanki çamaşır makinesi kullanmayı bilmiyormuşuz</p>
+          <center><div class="card-footer bg-transparent">
+            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
+            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
+          </div></center>        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="card-header bg-transparent" id="durumSon2" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-body">
+          <h5 class="card-title">Beko Tost Makinesi Isınmaması</h5>
+          <p class="card-text">Beko'dan Dört ay önce bir tost makinesi aldım ama daha hepsini toplasan 10 defa çalıştırmamışım ve tost makinesi bir dakika ya çalışıyor ya da çalışmıyor ve on dakika duruyor ve ekmeği hamur bırakıyor bunun için Beko markasından böyle bir şey beklemiyorduk.</p>
+          <center><div class="card-footer bg-transparent">
+            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
+            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
+          </div></center>        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="card-header bg-transparent" id="durumSon2" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
         <div class="card-body">
           <h5 class="card-title">Beko TV Kurulum Problemi</h5>
           <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
-        </div>
-        <div class="card-footer bg-transparent m-auto">
-          <td style="width: 100px;"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-          <td style="width: 50px;"><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
-        </div>
+          <center><div class="card-footer bg-transparent">
+            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
+            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
+          </div></center>        </div>
       </div>
       <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
         <div class="card-body">
           <h5 class="card-title">Beko TV Kurulum Problemi</h5>
           <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
-        </div>
-        <div class="card-footer bg-transparent m-auto">
-          <td style="width: 100px;"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-          <td style="width: 50px;"><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
-        </div>
+          <center><div class="card-footer bg-transparent">
+            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
+            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
+          </div></center>        </div>
       </div>
       <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
         <div class="card-body">
           <h5 class="card-title">Beko TV Kurulum Problemi</h5>
           <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
-        </div>
-        <div class="card-footer bg-transparent m-auto">
-          <td style="width: 100px;"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-          <td style="width: 50px;"><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
-        </div>
+          <center><div class="card-footer bg-transparent">
+            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
+            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
+          </div></center>        </div>
       </div>
       <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
         <div class="card-body">
           <h5 class="card-title">Beko TV Kurulum Problemi</h5>
           <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
-        </div>
-        <div class="card-footer bg-transparent m-auto">
-          <td style="width: 100px;"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-          <td style="width: 50px;"><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
-        </div>
+          <center><div class="card-footer bg-transparent">
+            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
+            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
+          </div></center>        </div>
       </div>
       <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
         <div class="card-body">
           <h5 class="card-title">Beko TV Kurulum Problemi</h5>
           <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
-        </div>
-        <div class="card-footer bg-transparent m-auto">
-          <td style="width: 100px;"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-          <td style="width: 50px;"><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
-        </div>
+          <center><div class="card-footer bg-transparent">
+            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
+            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
+          </div></center>        </div>
       </div>
       <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
         <div class="card-body">
           <h5 class="card-title">Beko TV Kurulum Problemi</h5>
           <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
-        </div>
-        <div class="card-footer bg-transparent m-auto">
-          <td style="width: 100px;"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-          <td style="width: 50px;"><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
-        </div>
-      </div>
-      <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
-        <div class="card-body">
-          <h5 class="card-title">Beko TV Kurulum Problemi</h5>
-          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
-        </div>
-        <div class="card-footer bg-transparent m-auto">
-          <td style="width: 100px;"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-          <td style="width: 50px;"><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
-        </div>
-      </div>
-      <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
-        <div class="card-body">
-          <h5 class="card-title">Beko TV Kurulum Problemi</h5>
-          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
-        </div>
-        <div class="card-footer bg-transparent m-auto">
-          <td style="width: 100px;"><button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-          <td style="width: 50px;"><button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
-        </div>
+          <center><div class="card-footer bg-transparent">
+            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
+            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
+          </div></center>        </div>
       </div>
     </div>
 
@@ -174,11 +166,12 @@
             </div>
             <center>
               <br>
-              <h6>Cevap Yaz</h6>
+              <h6>Lütfen çözümleme sürecini aktarınız</h6>
+              <br>
             <input style="border-radius: 50px;" id="inputBox" class="modal-body w-75"></input>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-success sendButton" data-bs-dismiss="modal" id="Gonder">Gönder</button>
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Kapat</button>
+            <div class="modal-footer justify-content-center">
+              <button type="button" class="btn btn-success sendButton px-4" data-bs-dismiss="modal" id="Gonder">Gönder</button>
+              <button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-dismiss="modal">Kapat</button>
             </div>
           </div></center>
         </div>
@@ -190,11 +183,11 @@
           <div class="modal-header">
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body text-center">
             Şikayeti silmek istediğinize emin misiniz?
           </div><center>
-          <div class="modal-footer">
-            <button type="button" id="silButton" class="btn btn-danger" data-bs-dismiss="modal">Sil</button>
+          <div class="modal-footer justify-content-center">
+            <button type="button" id="silButton" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-dismiss="modal">Sil</button>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
           </div></center>
         </div>
@@ -238,8 +231,8 @@
 
   gondermeButonu.addEventListener("click",function(){
     durumSon.innerHTML="Cevaplanmış";
-    durumSon.style.color = "green";
-    inputBox.value = "";
+    durumSon.style.color = "#398d67";
+    //inputBox.value = "";
     silinecekOge.style.backgroundColor = "rgb(215, 215, 215)"
     doubleButtons.remove();
   })
@@ -249,6 +242,14 @@
   const silmeButonu = document.getElementById("silButton")
   silmeButonu.addEventListener("click", function(){
     silinecekOge.remove();
+  })
+
+  const answer = document.getElementById("answer")
+  const answerDetails = document.getElementById("answerDetails")
+  const divider = document.getElementById("dropdown-divider")
+  gondermeButonu.addEventListener("click", function(){
+    answer.innerHTML = "Cevap"
+    answerDetails.innerHTML = inputBox.value
   })
 
 </script>
