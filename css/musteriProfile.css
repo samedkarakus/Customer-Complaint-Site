@@ -60,9 +60,7 @@ body{
     width: 200px;
     background-color: white;
     border-radius: 500px;
-    position: absolute;
     bottom: 350px;
-    background-image: url(firma.png);
 }
 
 .profileRectangule{
@@ -73,16 +71,21 @@ body{
     display: flex;
 }
 
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
 .profileRectangule *{
     display: flex;
+    align-items: center;
 }
 
 .profileBtns{
-    padding-left: 220px;
-    width: 60%;
+    padding-left: 30px;
     color: white;
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
 
 .circleAndName h1{
@@ -124,6 +127,14 @@ body{
 
 .duzenlemeButonlari *{
     width: 150px;
+}
+
+
+.sikayetTable{
+    padding-top: 50px;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 100px;
 }
 
 @media only screen and (max-width: 992px) {

@@ -1,0 +1,249 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/musteriProfile.css">
+    <link rel="stylesheet" href="css/musteriGozundenFirma.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="js/firmaSikayetAra.js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Montserrat:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar my-3 navbar-expand-lg navbar-dark justify-content-center">
+        <div class="container w-75 flex-row align-items-center">
+          <a class="navbar-brand align-items-center" href="#">
+            <img src="img/logoWhite.svg" alt="" width="50" class="d-inline-block align-text-top">
+            Dert Kapısı</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="navbar-collapse" style="flex-direction: row-reverse;" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="dashboardMusteri.html">Gündemdeki Şikayetler</a>
+            </div>
+          </div>
+        </div>          
+    </div>
+    <div class="container1">
+      <div class="circleAndName">
+          <img src="css/bekoLogo.png" alt="">
+      </div>
+      <div class="profileBtns">
+          <h1>BEKO Evimize Sağlık</h1>
+      </div>
+    </div>
+
+    <div class="sikayetButtonlari w-25 my-5">
+      <button type="button" class="btn btn-success">Ekle</button>
+      <button type="button" class="btn btn-danger">Sil</button>
+      <button type="button" class="btn btn-warning">Düzenle</button>
+    </div>
+
+    <div class="firmaArama">
+      <input id="searcher" class="form-control me-2 w-50" type="search" placeholder="Dert ara ..." aria-label="Search">
+      <a class="btn btn-primary sikayetAra" type="submit">Ara</a>
+    </div>
+
+    <div class="sikayetTable w-75">
+      <div class="card mb-3" id="silinecekOge" style="max-width: 100%;">
+        <div class="card-header bg-transparent" id="durumSon" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-body">
+          <h5 class="card-title">Beko Fırın Tellerinin Birine Isı Gitmiyor!</h5>
+          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor sadece bir tel ısınıyor bu normal bir şey mi acaba çünkü çift telin ikisininde kırmızı olması ısınması gerekir anlam veremedim yardımcı olur musunuz.</p>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="card-header bg-transparent" id="durumSon1" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-body">
+          <h5 class="card-title">Silivri Beko Bayii Hediyemi Vermiyor!</h5>
+          <p class="card-text">Beko Silivri bayisinden 4 yıl önce kurutma makinesi aldım. Eski faturaları atmak için baktığımda bu alışverişimin hediyesi olarak kredi kartımın slipinden Beko blender hediye olarak kazandığımı alt kısmında gördüm. Bana hediyeli bir satış olduğu bilgisini vermediler. Herhangi bir hediye teslim almadım. Bayii aradım. Kibarca durumu anlattım.</p>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-body">
+          <h5 class="card-title">Beko TV Kurulum Problemi</h5>
+          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-body">
+          <h5 class="card-title">Beko TV Kurulum Problemi</h5>
+          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-body">
+          <h5 class="card-title">Beko TV Kurulum Problemi</h5>
+          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-body">
+          <h5 class="card-title">Beko TV Kurulum Problemi</h5>
+          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-body">
+          <h5 class="card-title">Beko TV Kurulum Problemi</h5>
+          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-body">
+          <h5 class="card-title">Beko TV Kurulum Problemi</h5>
+          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-body">
+          <h5 class="card-title">Beko TV Kurulum Problemi</h5>
+          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-body">
+          <h5 class="card-title">Beko TV Kurulum Problemi</h5>
+          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-body">
+          <h5 class="card-title">Beko TV Kurulum Problemi</h5>
+          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
+        </div>
+      </div>
+    </div>
+
+    <center>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Şikayet Detayı</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <center>
+              <br>
+              <h6>Cevap Yaz</h6>
+            <input style="border-radius: 50px;" id="inputBox" class="modal-body w-75"></input>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success sendButton" data-bs-dismiss="modal" id="Gonder">Gönder</button>
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Kapat</button>
+            </div>
+          </div></center>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Şikayeti silmek istediğinize emin misiniz?
+          </div><center>
+          <div class="modal-footer">
+            <button type="button" id="silButton" class="btn btn-danger" data-bs-dismiss="modal">Sil</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
+          </div></center>
+        </div>
+      </div>
+  </div>
+</center>
+<footer class="bg-dark text-center text-light">
+  <div class="container p-4 pb-0">
+    <section class="mb-4">
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+  </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-light text-decoration-none fw-bold" href="anasayfa.html">dertkapisi.com</a>
+  </div>
+</footer>
+</body>
+<script>
+  // let searchBar = document.querySelector("#searcher");
+
+  // let aranacakDom = document.querySelectorAll(".aranacak");
+
+  // let oge = document.querySelectorAll(".satirlar");
+
+  // searchBar.addEventListener("keyup", search);
+
+  // function search(){
+
+  //   let searchData = searchBar.value.toLocaleUpperCase()
+
+  //   for(i=0; i<=searchData.length; i++){
+  //     if(aranacakDom[i].innerHTML.toLocaleUpperCase().indexOf(searchData) > -1){
+  //       oge[i].style.display = "";
+  //     }else{
+  //       oge[i].style.display = "none"
+  //     }
+  //   }
+  // };
+
+  // const myModal = document.getElementById('myModal')
+  // const myInput = document.getElementById('myInput')
+
+  // myModal.addEventListener('shown.bs.modal', () => {
+  //   myInput.focus()
+  // })
+
+  const gondermeButonu=  document.getElementById("Gonder");
+  const durumSon = document.getElementById("durumSon");
+  const inputBox = document.getElementById("inputBox");
+  const doubleButtons = document.getElementById("doubleButtons");
+
+  gondermeButonu.addEventListener("click",function(){
+    durumSon.innerHTML="Cevaplanmış";
+    durumSon.style.color = "green";
+    inputBox.value = "";
+    silinecekOge.style.backgroundColor = "rgb(215, 215, 215)"
+    doubleButtons.remove();
+  })
+
+
+  const silinecekOge = document.getElementById("silinecekOge")
+  const silmeButonu = document.getElementById("silButton")
+  silmeButonu.addEventListener("click", function(){
+    silinecekOge.remove();
+  })
+
+</script>
+</html>

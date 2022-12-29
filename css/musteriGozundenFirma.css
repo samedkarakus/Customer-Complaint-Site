@@ -1,0 +1,11 @@
+.sikayetButtonlari{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.sikayetButtonlari *{
+    padding-left: 30px!important;
+    padding-right: 30px!important;
+}
