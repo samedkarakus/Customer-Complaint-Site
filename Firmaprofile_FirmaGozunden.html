@@ -325,33 +325,6 @@
 </center>
 </body>
 <script>
-  // let searchBar = document.querySelector("#searcher");
-
-  // let aranacakDom = document.querySelectorAll(".aranacak");
-
-  // let oge = document.querySelectorAll(".satirlar");
-
-  // searchBar.addEventListener("keyup", search);
-
-  // function search(){
-
-  //   let searchData = searchBar.value.toLocaleUpperCase()
-
-  //   for(i=0; i<=searchData.length; i++){
-  //     if(aranacakDom[i].innerHTML.toLocaleUpperCase().indexOf(searchData) > -1){
-  //       oge[i].style.display = "";
-  //     }else{
-  //       oge[i].style.display = "none"
-  //     }
-  //   }
-  // };
-
-  // const myModal = document.getElementById('myModal')
-  // const myInput = document.getElementById('myInput')
-
-  // myModal.addEventListener('shown.bs.modal', () => {
-  //   myInput.focus()
-  // })
 
   let gondermeButonu=  document.getElementById("Gonder");
   let durumSon = document.getElementById("durumSon");
@@ -380,11 +353,10 @@
     answerDetails.innerHTML = inputBox.value
   })
 
-  
+  document.getElementById("searcher").addEventListener("keyup", searchInDivs);
 
   function searchInDivs() {
     let searchTerm = document.querySelector('#searcher').value.toLowerCase();
-    
  
    var divs = document.getElementsByTagName('div');
  

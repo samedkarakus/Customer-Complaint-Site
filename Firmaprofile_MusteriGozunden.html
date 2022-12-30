@@ -77,15 +77,15 @@
       <div class="card mb-3" style="max-width: 100%;">
         <div class="card-header bg-transparent" id="durumSon2" style="color: orange; font-weight: bold; text-align: center;">Sıraya Alındı</div>
         <div class="card-body">
-          <h5 class="card-title">Beko TV Kurulum Problemi</h5>
-          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
+          <h5 class="card-title">Beko Ürününün Arkasında Durmaması</h5>
+          <p class="card-text">Evimin tüm eşyalarını Beko'dan aldığım gibi çamaşır makinesinde Gebze Piranlar mağazasından 11 ay önce satın aldım. Aldığım günden beri makinedeki çamaşırlar yumuşatıcı kokmuyordu. Bunun üzerine teknik servise başvurduk ilk geldiğinde sanki çamaşır makinesi kullanmayı bilmiyormuşuz</p>
         </div>
       </div>
       <div class="card mb-3" style="max-width: 100%;">
         <div class="card-header bg-transparent" id="durumSon2" style="color: orange; font-weight: bold; text-align: center;">Sıraya Alındı</div>
         <div class="card-body">
-          <h5 class="card-title">Beko TV Kurulum Problemi</h5>
-          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
+          <h5 class="card-title">Beko Tost Makinesi Isınmaması</h5>
+          <p class="card-text">Beko'dan Dört ay önce bir tost makinesi aldım ama daha hepsini toplasan 10 defa çalıştırmamışım ve tost makinesi bir dakika ya çalışıyor ya da çalışmıyor ve on dakika duruyor ve ekmeği hamur bırakıyor bunun için Beko markasından böyle bir şey beklemiyorduk.</p>
         </div>
       </div>
       <div class="card mb-3" style="max-width: 100%;">
@@ -213,65 +213,6 @@
 </footer>
 </body>
 <script>
-  // let searchBar = document.querySelector("#searcher");
-
-  // let aranacakDom = document.querySelectorAll(".aranacak");
-
-  // let oge = document.querySelectorAll(".satirlar");
-
-  // searchBar.addEventListener("keyup", search);
-
-  // function search(){
-
-  //   let searchData = searchBar.value.toLocaleUpperCase()
-
-  //   for(i=0; i<=searchData.length; i++){
-  //     if(aranacakDom[i].innerHTML.toLocaleUpperCase().indexOf(searchData) > -1){
-  //       oge[i].style.display = "";
-  //     }else{
-  //       oge[i].style.display = "none"
-  //     }
-  //   }
-  // };
-
-  // const myModal = document.getElementById('myModal')
-  // const myInput = document.getElementById('myInput')
-
-  // myModal.addEventListener('shown.bs.modal', () => {
-  //   myInput.focus()
-  // })
-
-
-  // let eklenecekeOge = document.getElementById("eklenecekOge")
-  // // let cardTitle = document.querySelector("inputBox")
-  // // let cardText = document.getElementById("cardText")
-  // let gondermeButonu = document.getElementById("sendButton")
-  // let inputBox = document.getElementById("inputBox")
-  // let inputBoxDetails = document.getElementById("inputBoxDetails")
-  // let table = document.querySelector(".sikayetTable")
-  
-  // // gondermeButonu.addEventListener("submit", gonder())
-  
-  // function gonder(){
-
-
-  //   // inputBox.innerHTML = cardTitle.value
-  //   // inputBoxDetails.innerHTML = cardText.value
-
-  //   console.log("sikayet")
-
-  //   let eklenecekCard = `<div class="card mb-3" id="silinecekOge" style="max-width: 100%;">
-  //       <div class="card-header bg-transparent" id="durumSon" style="color: green; font-weight: bold; text-align: center;">Çözüldü</div>
-  //       <div class="card-body">
-  //         <h5 class="card-title"> ${inputbox.value} </h5>
-  //         <p class="card-text"> ${inputBoxDetails.value} </p>
-  //       </div>
-  //     </div>`
-
-  //     table.innerHTML += eklenecekCard
-
-  //     console.log("calisti")
-  // }
 
   let form = document.querySelector("#eklenecekBilgi")
 
@@ -309,6 +250,37 @@
 
   }
 
+
+  document.getElementById("searcher").addEventListener("keyup", searchInDivs);
+
+function searchInDivs() {
+  let searchTerm = document.querySelector('#searcher').value.toLowerCase();
+
+ var divs = document.getElementsByTagName('div');
+
+ for (var i = 0; i < divs.length; i++) {
+   var div = divs[i];
+
+   var paragraphs = div.getElementsByTagName('p');
+   var foundedTexts = div.getElementsByClassName('card');
+
+   for (var j = 0; j < paragraphs.length; j++) {
+     var paragraph = paragraphs[j];
+     var foundedText = foundedTexts[j];
+
+     var content = foundedText.textContent.toLowerCase();
+     if (content.indexOf(searchTerm) == -1) {
+
+       foundedText.style.display = 'none';
+     } else {
+       foundedText.style.display = '';
+     }
+   }
+ }
+}
+
+let sikayetAra = document.getElementById('sikayetAra')
+sikayetAra.addEventListener('click', searchInDivs);
 
 
 </script>
