@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>  
     <link rel="stylesheet" href="js/firmaSikayetAra.js">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Montserrat:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -23,7 +24,7 @@
             </button>
         <div class="navbar-collapse" style="flex-direction: row-reverse;" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="dashboardMusteri.html">Gündemdeki Şikayetler</a>
+              <a class="nav-link" aria-current="page" href="dashboardFirma.html">Gündemdeki Dertler</a>
             </div>
           </div>
         </div>          
@@ -38,7 +39,7 @@
   </div>
   <div class="firmaArama">
     <input id="searcher" class="form-control me-2 w-50" type="search" placeholder="Dert ara ..." aria-label="Search">
-    <a class="btn btn-primary sikayetAra" type="submit">Ara</a>
+    <a class="btn btn-primary" id="sikayetAra" type="submit">Ara</a>
   </div>
     <div class="sikayetTable w-75">
       <div class="card mb-3" id="silinecekOge" style="max-width: 100%;">
@@ -48,110 +49,209 @@
           <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor sadece bir tel ısınıyor bu normal bir şey mi acaba çünkü çift telin ikisininde kırmızı olması ısınması gerekir anlam veremedim yardımcı olur musunuz.</p>
           <h5 class="card-title" id="answer"></h5>
           <p class="card-text" id="answerDetails"></p>
-          <center><div class="card-footer bg-transparent">
-            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
+          <center><div class="card-footer bg-transparent" id="doubleButtons">
+            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
             <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
           </div></center>
         </div>
       </div>
       <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon1" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-header bg-transparent" id="durumSon1" style="color: #398d67; font-weight: bold; text-align: center;">Cevaplanmış</div>
         <div class="card-body">
           <h5 class="card-title">Silivri Beko Bayii Hediyemi Vermiyor!</h5>
           <p class="card-text">Beko Silivri bayisinden 4 yıl önce kurutma makinesi aldım. Eski faturaları atmak için baktığımda bu alışverişimin hediyesi olarak kredi kartımın slipinden Beko blender hediye olarak kazandığımı alt kısmında gördüm. Bana hediyeli bir satış olduğu bilgisini vermediler. Herhangi bir hediye teslim almadım. Bayii aradım. Kibarca durumu anlattım.</p>
+          <h5 class="card-title" id="answer">Cevap</h5>
+          <p class="card-text" id="answerDetails">Sevgili müşterimiz ,
+
+            Öncelikle Firmamıza gösterdiğiniz ilgiye teşekkür ederiz.
+            Şikayetiniz bizlere ulaştı. Sizinle en kısa sürede iletişime geçeceğiz.
+            Ürün ve hizmetlerimizle ilgili her türlü bilgi, öneri, görüş ve çözüm taleplerinizi öncelikle Sikayetvar@arcelik.com.tr  kanalıyla bizlere iletmenizi rica ederiz.           
+            Beko ailesi olarak sağlık ve mutluluk dolu günler dileriz.
+            7/24   yanınızdayız, mutluluğunuz için buradayız.
+            
+            Beko Müşteri İletişim Merkezi
+            0850 210 0 888
+            www.beko.com.tr</p>
           <center><div class="card-footer bg-transparent">
-            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
           </div></center>        </div>
       </div>
       <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: #398d67; font-weight: bold; text-align: center;">Cevaplanmış</div>
         <div class="card-body">
           <h5 class="card-title">Beko TV Kurulum Problemi</h5>
           <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
+          <h5 class="card-title" id="answer">Cevap</h5>
+          <p class="card-text" id="answerDetails">Sevgili müşterimiz ,
+
+            Öncelikle Firmamıza gösterdiğiniz ilgiye teşekkür ederiz.
+            Şikayetiniz bizlere ulaştı. Sizinle en kısa sürede iletişime geçeceğiz.
+            Ürün ve hizmetlerimizle ilgili her türlü bilgi, öneri, görüş ve çözüm taleplerinizi öncelikle Sikayetvar@arcelik.com.tr  kanalıyla bizlere iletmenizi rica ederiz.           
+            Beko ailesi olarak sağlık ve mutluluk dolu günler dileriz.
+            7/24   yanınızdayız, mutluluğunuz için buradayız.
+            
+            Beko Müşteri İletişim Merkezi
+            0850 210 0 888
+            www.beko.com.tr</p>
           <center><div class="card-footer bg-transparent">
-            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
           </div></center>        </div>
       </div>
       <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: #398d67; font-weight: bold; text-align: center;">Cevaplanmış</div>
         <div class="card-body">
           <h5 class="card-title">Beko Ürününün Arkasında Durmaması</h5>
           <p class="card-text">Evimin tüm eşyalarını Beko'dan aldığım gibi çamaşır makinesinde Gebze Piranlar mağazasından 11 ay önce satın aldım. Aldığım günden beri makinedeki çamaşırlar yumuşatıcı kokmuyordu. Bunun üzerine teknik servise başvurduk ilk geldiğinde sanki çamaşır makinesi kullanmayı bilmiyormuşuz</p>
+          <h5 class="card-title" id="answer">Cevap</h5>
+          <p class="card-text" id="answerDetails">Sevgili müşterimiz ,
+
+            Öncelikle Firmamıza gösterdiğiniz ilgiye teşekkür ederiz.
+            Şikayetiniz bizlere ulaştı. Sizinle en kısa sürede iletişime geçeceğiz.
+            Ürün ve hizmetlerimizle ilgili her türlü bilgi, öneri, görüş ve çözüm taleplerinizi öncelikle Sikayetvar@arcelik.com.tr  kanalıyla bizlere iletmenizi rica ederiz.           
+            Beko ailesi olarak sağlık ve mutluluk dolu günler dileriz.
+            7/24   yanınızdayız, mutluluğunuz için buradayız.
+            
+            Beko Müşteri İletişim Merkezi
+            0850 210 0 888
+            www.beko.com.tr</p>
           <center><div class="card-footer bg-transparent">
-            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
           </div></center>        </div>
       </div>
       <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: #398d67; font-weight: bold; text-align: center;">Cevaplanmış</div>
         <div class="card-body">
           <h5 class="card-title">Beko Tost Makinesi Isınmaması</h5>
           <p class="card-text">Beko'dan Dört ay önce bir tost makinesi aldım ama daha hepsini toplasan 10 defa çalıştırmamışım ve tost makinesi bir dakika ya çalışıyor ya da çalışmıyor ve on dakika duruyor ve ekmeği hamur bırakıyor bunun için Beko markasından böyle bir şey beklemiyorduk.</p>
+          <h5 class="card-title" id="answer">Cevap</h5>
+          <p class="card-text" id="answerDetails">Sevgili müşterimiz ,
+
+            Öncelikle Firmamıza gösterdiğiniz ilgiye teşekkür ederiz.
+            Şikayetiniz bizlere ulaştı. Sizinle en kısa sürede iletişime geçeceğiz.
+            Ürün ve hizmetlerimizle ilgili her türlü bilgi, öneri, görüş ve çözüm taleplerinizi öncelikle Sikayetvar@arcelik.com.tr  kanalıyla bizlere iletmenizi rica ederiz.           
+            Beko ailesi olarak sağlık ve mutluluk dolu günler dileriz.
+            7/24   yanınızdayız, mutluluğunuz için buradayız.
+            
+            Beko Müşteri İletişim Merkezi
+            0850 210 0 888
+            www.beko.com.tr</p>
           <center><div class="card-footer bg-transparent">
-            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
           </div></center>        </div>
       </div>
       <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: #398d67; font-weight: bold; text-align: center;">Cevaplanmış</div>
         <div class="card-body">
-          <h5 class="card-title">Beko TV Kurulum Problemi</h5>
-          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
+          <h5 class="card-title">Beko 31225 kodlu klima aldım.</h5>
+          <p class="card-text">Klimayı şu anlık taktırmayacağımı dile getirdim nakliye ekibi klimayı getirip boş bir odama indirdi ve garantisinin başlamadığını dile getirdiği halde gidip kurulumu yapılmayan ürünlere garanti başlatmışlar. Ürünün seri numaralarını bile paylaşacağım.</p>
+          <h5 class="card-title" id="answer">Cevap</h5>
+          <p class="card-text" id="answerDetails">Sevgili müşterimiz ,
+
+            Öncelikle Firmamıza gösterdiğiniz ilgiye teşekkür ederiz.
+            Şikayetiniz bizlere ulaştı. Sizinle en kısa sürede iletişime geçeceğiz.
+            Ürün ve hizmetlerimizle ilgili her türlü bilgi, öneri, görüş ve çözüm taleplerinizi öncelikle Sikayetvar@arcelik.com.tr  kanalıyla bizlere iletmenizi rica ederiz.           
+            Beko ailesi olarak sağlık ve mutluluk dolu günler dileriz.
+            7/24   yanınızdayız, mutluluğunuz için buradayız.
+            
+            Beko Müşteri İletişim Merkezi
+            0850 210 0 888
+            www.beko.com.tr</p>
           <center><div class="card-footer bg-transparent">
-            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
           </div></center>        </div>
       </div>
       <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: #398d67; font-weight: bold; text-align: center;">Cevaplanmış</div>
         <div class="card-body">
-          <h5 class="card-title">Beko TV Kurulum Problemi</h5>
-          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
+          <h5 class="card-title">Aldığım 13 adet klimayı nakliye ile göndermiş</h5>
+          <p class="card-text">Nakliyeci ürünleri kenara indirin beni ilgilendirmez ben nakliyeciyim diyor, sanırım ürünleri sokağa indireceğiz ve montaj ekibi 1-3-5 gün bana bilgi vermediği bir tarihte gelerek kuracak, bu süreçte çalınmazsa klimalarda sokakta duracak, servise müşteri hizmetleri bile ulaşamıyor. Klimaları isteyeli 1 haftayı geçti, müşteri hizmetlerini 2 kere aradık dönüş yok, kötü hizmet. Bayiyi 53***9312 numaralı telefonlarından 11.16'da aradık dönüş yok.</p>
+          <h5 class="card-title" id="answer">Cevap</h5>
+          <p class="card-text" id="answerDetails">Sevgili müşterimiz ,
+
+            Öncelikle Firmamıza gösterdiğiniz ilgiye teşekkür ederiz.
+            Şikayetiniz bizlere ulaştı. Sizinle en kısa sürede iletişime geçeceğiz.
+            Ürün ve hizmetlerimizle ilgili her türlü bilgi, öneri, görüş ve çözüm taleplerinizi öncelikle Sikayetvar@arcelik.com.tr  kanalıyla bizlere iletmenizi rica ederiz.           
+            Beko ailesi olarak sağlık ve mutluluk dolu günler dileriz.
+            7/24   yanınızdayız, mutluluğunuz için buradayız.
+            
+            Beko Müşteri İletişim Merkezi
+            0850 210 0 888
+            www.beko.com.tr</p>
           <center><div class="card-footer bg-transparent">
-            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
           </div></center>        </div>
       </div>
       <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: #398d67; font-weight: bold; text-align: center;">Cevaplanmış</div>
         <div class="card-body">
-          <h5 class="card-title">Beko TV Kurulum Problemi</h5>
-          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
+          <h5 class="card-title">Online olarak Koçtaş ®'dan bir Beko mobil klima aldık.</h5>
+          <p class="card-text">Teslimattan önce kurulum için telefona mesaj geldi. Telefonla teyit için aradım ve ürünü biz getireceğiz dediler. Ertesi gün servis klimayı getirdi ve cama ya da duvara delik neden açılmadı diye sordu, böyle bir şey bana söylenmedi ki dedim. Bunun üzerine kullanımını bile göstermeden çekip gittiler. Yetkili bayii elemanları sanki kargo şirketi çalışanı gibi ürünü bırakıp gittiler. Beko gibi bir markada</p>
+          <h5 class="card-title" id="answer">Cevap</h5>
+          <p class="card-text" id="answerDetails">Sevgili müşterimiz ,
+
+            Öncelikle Firmamıza gösterdiğiniz ilgiye teşekkür ederiz.
+            Şikayetiniz bizlere ulaştı. Sizinle en kısa sürede iletişime geçeceğiz.
+            Ürün ve hizmetlerimizle ilgili her türlü bilgi, öneri, görüş ve çözüm taleplerinizi öncelikle Sikayetvar@arcelik.com.tr  kanalıyla bizlere iletmenizi rica ederiz.           
+            Beko ailesi olarak sağlık ve mutluluk dolu günler dileriz.
+            7/24   yanınızdayız, mutluluğunuz için buradayız.
+            
+            Beko Müşteri İletişim Merkezi
+            0850 210 0 888
+            www.beko.com.tr</p>
           <center><div class="card-footer bg-transparent">
-            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
+          </div></center>
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="card-header bg-transparent" id="durumSon2" style="color: #398d67; font-weight: bold; text-align: center;">Cevaplanmış</div>
+        <div class="card-body">
+          <h5 class="card-title">Montaj sorunumu çözmek için aynı ekibi "gecikmeli gelebilirler"</h5>
+          <p class="card-text">1 saat 15 dakika önce gönderdiği için Beko 'ya teşekkür ederim. Açtırdığım montaj yerine borunun ucuna takılan kapakları takıp "oldu abla" diyen ekibe de sonsuz teşekkürler. Bütün bunlardan herkes ne anlıyorsa anlasın ve başına ne geleceğini bilsin. Ben payıma düşeni aldım ve bir daha umarım bunların sesini bile duymam.</p>
+          <h5 class="card-title" id="answer">Cevap</h5>
+          <p class="card-text" id="answerDetails">Sevgili müşterimiz ,
+
+            Öncelikle Firmamıza gösterdiğiniz ilgiye teşekkür ederiz.
+            Şikayetiniz bizlere ulaştı. Sizinle en kısa sürede iletişime geçeceğiz.
+            Ürün ve hizmetlerimizle ilgili her türlü bilgi, öneri, görüş ve çözüm taleplerinizi öncelikle Sikayetvar@arcelik.com.tr  kanalıyla bizlere iletmenizi rica ederiz.           
+            Beko ailesi olarak sağlık ve mutluluk dolu günler dileriz.
+            7/24   yanınızdayız, mutluluğunuz için buradayız.
+            
+            Beko Müşteri İletişim Merkezi
+            0850 210 0 888
+            www.beko.com.tr</p>
+          <center><div class="card-footer bg-transparent">
           </div></center>        </div>
       </div>
       <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: #398d67; font-weight: bold; text-align: center;">Cevaplanmış</div>
         <div class="card-body">
-          <h5 class="card-title">Beko TV Kurulum Problemi</h5>
-          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
+          <h5 class="card-title">Beko Ürünleri Pişmanlıktır, Doğru Düzgün Servis Hizmeti Sağlamıyorlar</h5>
+          <p class="card-text">Beko marka bulaşık makinesi aldım. Bulaşık makinem sürekli olarak bulaşıklarda pas lekesine benzer kirler çıkartıyor. Temiz bulaşık koysak dahi aynı sorunu yaşıyoruz. Beko servisine ürünümüz hakkında 7-8 kere bildirimde bulunduk. Kahramanmaraş Göksun ilçesinde bulunan servis bir sürü parça değişimi yaptı ancak hala sorunu çözemediler. Benim evimde bulaşık dahi yıkadılar ancak ürünüme değişim yapmadılar. Şu anda bulaşık makinem yetkili serviste yine parça değiştirmek istiyorlar. Ben bu markadan da servisinden de şikayetçiyim. Çok mağdur edildim. Bir daha kesinlikle Beko marka bir ürün almayı düşünmüyorum.</p>
+          <h5 class="card-title" id="answer">Cevap</h5>
+          <p class="card-text" id="answerDetails">Sevgili müşterimiz ,
+
+            Öncelikle Firmamıza gösterdiğiniz ilgiye teşekkür ederiz.
+            Şikayetiniz bizlere ulaştı. Sizinle en kısa sürede iletişime geçeceğiz.
+            Ürün ve hizmetlerimizle ilgili her türlü bilgi, öneri, görüş ve çözüm taleplerinizi öncelikle Sikayetvar@arcelik.com.tr  kanalıyla bizlere iletmenizi rica ederiz.           
+            Beko ailesi olarak sağlık ve mutluluk dolu günler dileriz.
+            7/24   yanınızdayız, mutluluğunuz için buradayız.
+
+            Beko Müşteri İletişim Merkezi
+            0850 210 0 888
+            www.beko.com.tr</p>
           <center><div class="card-footer bg-transparent">
-            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
           </div></center>        </div>
       </div>
       <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: #398d67; font-weight: bold; text-align: center;">Cevaplanmış</div>
         <div class="card-body">
-          <h5 class="card-title">Beko TV Kurulum Problemi</h5>
-          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
+          <h5 class="card-title">Beko Çamaşır Makinesinde Küflenme Var Ve Kesinlikle Çözüm Yok</h5>
+          <p class="card-text">Yeni evliyiz beyaz eşyalarımızı ne yazık ki Beko'dan alma hatasında bulunduk eşyalar evimize kuruldu çamaşır makinesi ikinci kullanımda fark ettim ki içinde küfler var kazan komple neredeyse küflü değişim talep ettiğim. Halde ısrarla erteleniyoruz kayıt açılıyor servis geliyor servis karar veriyor deniyor servis ısrarla kazan değişecek bilgisi veriyor iki kez kullandığım. Makinede değişim.</p>
+          <h5 class="card-title" id="answer">Cevap</h5>
+          <p class="card-text" id="answerDetails">Sevgili müşterimiz ,
+
+            Öncelikle Firmamıza gösterdiğiniz ilgiye teşekkür ederiz.
+            Şikayetiniz bizlere ulaştı. Sizinle en kısa sürede iletişime geçeceğiz.
+            Ürün ve hizmetlerimizle ilgili her türlü bilgi, öneri, görüş ve çözüm taleplerinizi öncelikle Sikayetvar@arcelik.com.tr  kanalıyla bizlere iletmenizi rica ederiz.           
+            Beko ailesi olarak sağlık ve mutluluk dolu günler dileriz.
+            7/24   yanınızdayız, mutluluğunuz için buradayız.
+            
+            Beko Müşteri İletişim Merkezi
+            0850 210 0 888
+            www.beko.com.tr</p>
           <center><div class="card-footer bg-transparent">
-            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
-          </div></center>        </div>
-      </div>
-      <div class="card mb-3" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: #e24646; font-weight: bold; text-align: center;">Cevaplanmamış</div>
-        <div class="card-body">
-          <h5 class="card-title">Beko TV Kurulum Problemi</h5>
-          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
-          <center><div class="card-footer bg-transparent">
-            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" id="doubleButtons" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
-            <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
           </div></center>        </div>
       </div>
     </div>
@@ -193,6 +293,35 @@
         </div>
       </div>
   </div>
+
+  <footer class="bg-dark text-center text-light">
+    <div class="container p-4 pb-0">
+      <section class="mb-4">
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-light text-decoration-none fw-bold" href="anasayfa.html">dertkapisi.com</a>
+    </div>
+  </footer>
 </center>
 </body>
 <script>
@@ -224,22 +353,21 @@
   //   myInput.focus()
   // })
 
-  const gondermeButonu=  document.getElementById("Gonder");
-  const durumSon = document.getElementById("durumSon");
-  const inputBox = document.getElementById("inputBox");
-  const doubleButtons = document.getElementById("doubleButtons");
+  let gondermeButonu=  document.getElementById("Gonder");
+  let durumSon = document.getElementById("durumSon");
+  let inputBox = document.getElementById("inputBox");
+  let doubleButtons = document.getElementById("doubleButtons");
 
   gondermeButonu.addEventListener("click",function(){
     durumSon.innerHTML="Cevaplanmış";
     durumSon.style.color = "#398d67";
     //inputBox.value = "";
-    silinecekOge.style.backgroundColor = "rgb(215, 215, 215)"
     doubleButtons.remove();
   })
 
 
-  const silinecekOge = document.getElementById("silinecekOge")
-  const silmeButonu = document.getElementById("silButton")
+  let silinecekOge = document.getElementById("silinecekOge")
+  let silmeButonu = document.getElementById("silButton")
   silmeButonu.addEventListener("click", function(){
     silinecekOge.remove();
   })
@@ -251,6 +379,38 @@
     answer.innerHTML = "Cevap"
     answerDetails.innerHTML = inputBox.value
   })
+
+  
+
+  function searchInDivs() {
+    let searchTerm = document.querySelector('#searcher').value.toLowerCase();
+    
+ 
+   var divs = document.getElementsByTagName('div');
+ 
+   for (var i = 0; i < divs.length; i++) {
+     var div = divs[i];
+ 
+     var paragraphs = div.getElementsByTagName('p');
+     var foundedTexts = div.getElementsByClassName('card');
+ 
+     for (var j = 0; j < paragraphs.length; j++) {
+       var paragraph = paragraphs[j];
+       var foundedText = foundedTexts[j];
+ 
+       var content = foundedText.textContent.toLowerCase();
+       if (content.indexOf(searchTerm) == -1) {
+ 
+         foundedText.style.display = 'none';
+       } else {
+         foundedText.style.display = '';
+       }
+     }
+   }
+ }
+ 
+ let sikayetAra = document.getElementById('sikayetAra')
+ sikayetAra.addEventListener('click', searchInDivs);
 
 </script>
 </html>

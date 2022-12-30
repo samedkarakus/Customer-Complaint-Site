@@ -43,77 +43,87 @@
 
     <div class="sikayetTable w-75">
       <div class="card mb-4 text-light border-0" id="silinecekOge" style="max-width: 100%;">
-        <div class="card-header" id="durumSon" style="color: green; font-weight: bold; text-align: center;">Çözüldü</div>
+        <div class="card-header" id="durumSon" style="color: green; text-align: center;">        
+          <div class="btn-group">
+            <button type="button" class="btn dropdown-toggle bg-white" style="color: red; font-weight: bold;" data-bs-toggle="dropdown" aria-expanded="false">
+              Çözülmeyi Bekliyor...
+            </button>
+            <ul class="dropdown-menu bg-light drop">
+              <li><a class="dropdown-item" id="duzenle" href="#" data-bs-toggle="modal" data-bs-target="#duzenleModal">Şikayet Düzenle</a></li>
+              <li><a class="dropdown-item" id="sil" href="#" data-bs-toggle="modal" data-bs-target="#modalDelete">Şikayet Sil</a></li>
+            </ul>
+        </div>
+      </div>
         <div class="card-body">
-          <h5 class="card-title">Beko Fırın Tellerinin Birine Isı Gitmiyor!</h5>
-          <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor sadece bir tel ısınıyor bu normal bir şey mi acaba çünkü çift telin ikisininde kırmızı olması ısınması gerekir anlam veremedim yardımcı olur musunuz.</p>
+          <h5 class="card-title" id="duzenlenecekTitle">Beko Fırın Tellerinin Birine Isı Gitmiyor!</h5>
+          <p class="card-text" id="duzenlenecekText">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor sadece bir tel ısınıyor bu normal bir şey mi acaba çünkü çift telin ikisininde kırmızı olması ısınması gerekir anlam veremedim yardımcı olur musunuz.</p>
         </div>
       </div>
       <div class="card mb-4 text-light border-0" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon1" style="color: red; font-weight: bold; text-align: center;">Çözülmeyi Bekliyor...</div>
+        <div class="card-header bg-transparent" id="durumSon1" style="color: green; font-weight: bold; text-align: center;">Çözüldü</div>
         <div class="card-body">
           <h5 class="card-title">Silivri Beko Bayii Hediyemi Vermiyor!</h5>
           <p class="card-text">Beko Silivri bayisinden 4 yıl önce kurutma makinesi aldım. Eski faturaları atmak için baktığımda bu alışverişimin hediyesi olarak kredi kartımın slipinden Beko blender hediye olarak kazandığımı alt kısmında gördüm. Bana hediyeli bir satış olduğu bilgisini vermediler. Herhangi bir hediye teslim almadım. Bayii aradım. Kibarca durumu anlattım.</p>
         </div>
       </div>
       <div class="card mb-4 text-light border-0" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Çözülmeyi Bekliyor...</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: green; font-weight: bold; text-align: center;">Çözüldü</div>
         <div class="card-body">
           <h5 class="card-title">Beko TV Kurulum Problemi</h5>
           <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
         </div>
       </div>
       <div class="card mb-4 text-light border-0" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Çözülmeyi Bekliyor...</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: green; font-weight: bold; text-align: center;">Çözüldü</div>
         <div class="card-body">
           <h5 class="card-title">Beko TV Kurulum Problemi</h5>
           <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
         </div>
       </div>
       <div class="card mb-4 text-light border-0" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Çözülmeyi Bekliyor...</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: green; font-weight: bold; text-align: center;">Çözüldü</div>
         <div class="card-body">
           <h5 class="card-title">Beko TV Kurulum Problemi</h5>
           <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
         </div>
       </div>
       <div class="card mb-4 text-light border-0" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Çözülmeyi Bekliyor...</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: green; font-weight: bold; text-align: center;">Çözüldü</div>
         <div class="card-body">
           <h5 class="card-title">Beko TV Kurulum Problemi</h5>
           <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
         </div>
       </div>
       <div class="card mb-4 text-light border-0" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Çözülmeyi Bekliyor...</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: green; font-weight: bold; text-align: center;">Çözüldü</div>
         <div class="card-body">
           <h5 class="card-title">Beko TV Kurulum Problemi</h5>
           <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
         </div>
       </div>
       <div class="card mb-4 text-light border-0" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Çözülmeyi Bekliyor...</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: green; font-weight: bold; text-align: center;">Çözüldü</div>
         <div class="card-body">
           <h5 class="card-title">Beko TV Kurulum Problemi</h5>
           <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
         </div>
       </div>
       <div class="card mb-4 text-light border-0" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Çözülmeyi Bekliyor...</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: green; font-weight: bold; text-align: center;">Çözüldü</div>
         <div class="card-body">
           <h5 class="card-title">Beko TV Kurulum Problemi</h5>
           <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
         </div>
       </div>
       <div class="card mb-4 text-light border-0" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Çözülmeyi Bekliyor...</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: green; font-weight: bold; text-align: center;">Çözüldü</div>
         <div class="card-body">
           <h5 class="card-title">Beko TV Kurulum Problemi</h5>
           <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
         </div>
       </div>
       <div class="card mb-4 text-light border-0" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon2" style="color: red; font-weight: bold; text-align: center;">Çözülmeyi Bekliyor...</div>
+        <div class="card-header bg-transparent" id="durumSon2" style="color: green; font-weight: bold; text-align: center;">Çözüldü</div>
         <div class="card-body">
           <h5 class="card-title">Beko TV Kurulum Problemi</h5>
           <p class="card-text">Beko'dan fırın aldım ama 5 aydır kullanıyorum yeni fark ettim maalesef çalıştırdığımda üst ızgaralardaki iki telde yanmıyor</p>
@@ -121,7 +131,7 @@
       </div>
     </div>
 
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="duzenleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
@@ -129,14 +139,12 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              Lanet olsun böyle müşteri temsilcilerine, ne haliniz varsa görün. Allah'a havale ediyorum sizleri.
-            </div><center>
+              <center><textarea required style="border-radius: 20px; border: 0.5px solid grey;" id="inputBox" class="modal-body w-75 my-3"></textarea>
+              <textarea required style="border-radius: 20px; min-height: 300px; border: 0.5px solid grey;" id="inputBoxDetails" class="modal-body w-75"></textarea>
+            </div><center style="padding-bottom: 30px;">
               <br>
-              <h6>Cevap Yaz</h6>
-            <input style="border-radius: 50px;" id="inputBox" class="modal-body w-75"></input>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-success sendButton" data-bs-dismiss="modal" id="Gonder">Gönder</button>
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Kapat</button>
+              <button type="button" class="btn btn-success sendButton px-4" data-bs-dismiss="modal" id="Gonder">Gönder</button>
+              <button type="button" class="btn btn-danger px-4" data-bs-dismiss="modal">Kapat</button>
             </div>
           </div></center>
         </div>
@@ -152,7 +160,7 @@
             Şikayeti silmek istediğinize emin misiniz?
           </div><center>
           <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Sil</button>
+            <button type="button" id="silmeButonu" class="btn btn-danger" data-bs-dismiss="modal">Sil</button>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
           </div></center>
         </div>
@@ -189,13 +197,27 @@
   //   myInput.focus()
   // })
 
-  const gondermeButonu=  document.getElementById("Gonder");
-  const durum1 = document.getElementById("durum1");
-  const inputBox = document.getElementById("inputBox");
-  gondermeButonu.addEventListener("click",function(){
-    durum1.innerHTML="Cevaplanmış";
-    durum1.style.color = "green";
-    inputBox.value = "";
+
+  let sikayetDuzenle = document.getElementById("duzenle")
+  let duzenlenecekTitle = document.getElementById("duzenlenecekTitle")
+  let duzenlenecekText = document.getElementById("duzenlenecekText")
+  let gondermeButonu=  document.getElementById("Gonder");
+  let silmeButonu = document.getElementById("silmeButonu")
+  let silinecekOge = document.getElementById("silinecekOge")
+
+  sikayetDuzenle.addEventListener("click", function(){
+    inputBox.value = duzenlenecekTitle.innerHTML
+    inputBoxDetails.value = duzenlenecekText.innerHTML
   })
+
+  gondermeButonu.addEventListener("click", function(){
+    duzenlenecekTitle.innerHTML = inputBox.value
+    duzenlenecekText.innerHTML = inputBoxDetails.value
+  })
+
+  silmeButonu.addEventListener("click", function(){
+    silinecekOge.remove()
+  })
+
 </script>
 </html>

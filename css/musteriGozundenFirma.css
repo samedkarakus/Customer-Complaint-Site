@@ -9,3 +9,179 @@
     padding-left: 30px!important;
     padding-right: 30px!important;
 }
+
+body{
+    background-color: #1C1C1C;
+    background-image: url(3dBackProfile.png);
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-nav{
+    justify-content: space-between;
+}
+
+.navbar-nav button{
+    width: 100px;
+    border-radius: 20px;
+}
+
+.nav-link{
+    float: right;
+}
+
+.navbar-brand{
+    display: flex;
+    justify-content: center;
+}
+
+.container *{
+    justify-content: space-between;
+}
+
+.bodyContainer{
+    color: white;
+}
+
+.bodyContain{
+    width: 60%;
+    margin-left: 15%;
+    padding-top: 10%;
+}
+
+.bodyTitle{
+    font-size: 4vw;
+}
+
+.d-flex{
+    margin-top: 8%;
+}
+
+.profileBackContainer{
+    background-color: white;
+    height: 200px;
+    opacity: 75%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.circleAndName *{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 500px;
+    bottom: 350px;
+}
+
+.profileRectangule{
+    width: 80%;
+}
+
+.circleAndName{
+    display: flex;
+}
+
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.profileRectangule *{
+    display: flex;
+    align-items: center;
+}
+
+.profileBtns{
+    padding-left: 30px;
+    color: white;
+}
+
+.circleAndName h1{
+    padding-left: 220px;
+    padding-top: 15px;
+    color: white;
+}
+
+.btn-success{
+    background-color: #398d67!important;
+}
+
+.btn-danger{
+    background-color: #e24646!important;
+}
+
+.btns{
+    justify-content: space-between;
+}
+
+.tableSikayet{
+    margin-top: 40px;
+    width: 75%;
+    margin-bottom: 50px!important;
+}
+
+.firmaArama{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.form-control{
+    border-radius: 15px!important;
+}
+
+.btn{
+    border-radius: 10px!important;
+}
+
+.duzenlemeButonlari{
+    margin-bottom: 100px;
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.duzenlemeButonlari *{
+    width: 150px;
+}
+
+
+.sikayetTable{
+    padding-top: 30px;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.sikayetTable *{
+    background-color: #1e2631;
+}
+
+
+
+.card-text{
+    color: white;
+    opacity: 50%;
+    font-weight: 200;
+}
+
+.card-body{
+    color: white;
+}
+
+.sikayetButtonlari *{
+    font-weight: 800;
+}
+
+.card{
+    border-radius: 20px!important;
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar-nav{
+        margin-left: 0%;
+    }
+}
