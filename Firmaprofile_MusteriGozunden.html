@@ -216,8 +216,6 @@
 
   let form = document.querySelector("#eklenecekBilgi")
 
-  
-
   form.addEventListener("submit", ekle)
 
   function ekle(){
@@ -233,13 +231,10 @@
     console.log(inputBox.value)
     console.log(inputBoxDetails.value)
 
-
-  
-
     
     let eklenecekCard = `
     <div class="card mb-3" id="silinecekOge" style="max-width: 100%;">
-        <div class="card-header bg-transparent" id="durumSon" style="color: green; font-weight: bold; text-align: center;">Çözüldü</div>
+        <div class="card-header bg-transparent" id="durumSon" style="color: orange; font-weight: bold; text-align: center;">Sıraya Alındı</div>
         <div class="card-body">
           <h5 class="card-title"> ${inputBox.value} </h5>
           <p class="card-text"> ${inputBoxDetails.value} </p>
