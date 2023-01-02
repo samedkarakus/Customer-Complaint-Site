@@ -50,7 +50,7 @@
           <h5 class="card-title" id="answer"></h5>
           <p class="card-text" id="answerDetails"></p>
           <center><div class="card-footer bg-transparent" id="doubleButtons">
-            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" data-bs-toggle="modal" data-bs-target="#exampleModal">Cevapla</button></td>
+            <td style="width: 100px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #398d67;" data-bs-toggle="modal" data-bs-target="#answerModal">Cevapla</button></td>
             <td style="width: 50px;"><button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-toggle="modal" data-bs-target="#modalDelete">Sil</button></td>                </button></td>
           </div></center>
         </div>
@@ -257,36 +257,36 @@
     </div>
 
     <center>
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Şikayet Detayı</h1>
+      <div class="modal fade" id="answerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog bg-light" style="border-radius: 50px;">
+          <div class="modal-content bg-light">
+            <div class="modal-header bg-light">
+              <h1 class="modal-title fs-5 bg-light" id="exampleModalLabel">Şikayet Detayı</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <center>
-              <br>
-              <h6>Lütfen çözümleme sürecini aktarınız</h6>
-              <br>
-            <input style="border-radius: 50px;" id="inputBox" class="modal-body w-75"></input>
-            <div class="modal-footer justify-content-center">
+            <center style="background-color: white;">
+              <br style="background-color: white;">
+              <h6 class="bg-light">Lütfen çözümleme sürecini aktarınız</h6>
+              <br style="background-color: white;">
+            <input style="border-radius: 50px;" id="inputBox" class="modal-body w-75 bg-light"></input>
+            <div class="modal-footer justify-content-center bg-light">
               <button type="button" class="btn btn-success sendButton px-4" data-bs-dismiss="modal" id="Gonder">Gönder</button>
               <button type="button" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-dismiss="modal">Kapat</button>
-            </div>
-          </div></center>
+            </div></center>
+          </div>
         </div>
     </div>
 
     <div class="modal fade" id="modalDelete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-dialog bg-light">
+        <div class="modal-content bg-light">
+          <div class="modal-header bg-light">
+            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body text-center">
+          <div class="modal-body text-center bg-light">
             Şikayeti silmek istediğinize emin misiniz?
-          </div><center>
-          <div class="modal-footer justify-content-center">
+          </div><center style="background-color: white;">
+          <div class="modal-footer justify-content-center bg-light">
             <button type="button" id="silButton" class="btn btn-light text-light border-0 px-4" style="background-color: #e24646;" data-bs-dismiss="modal">Sil</button>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">İptal</button>
           </div></center>
