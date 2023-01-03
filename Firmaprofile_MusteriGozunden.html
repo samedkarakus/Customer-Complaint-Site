@@ -25,6 +25,7 @@
         <div class="navbar-collapse" style="flex-direction: row-reverse;" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link" aria-current="page" href="dashboardMusteri.html">Gündemdeki Dertler</a>
+              <a href="anasayfa.html"><button type="button" class="btn btn-link btn-primary text-decoration-none text-light rounded-pill">Çıkış Yap</button></a>
             </div>
           </div>
         </div>          
@@ -222,15 +223,9 @@
 
     event.preventDefault()
 
-    console.log("göndere basıldı")
-
     let inputBox = document.getElementById("inputBox")
     let inputBoxDetails = document.getElementById("inputBoxDetails")
     let table = document.querySelector(".sikayetTable")
-
-    // console.log(inputBox.value)
-    // console.log(inputBoxDetails.value)
-
     
     let eklenecekCard = `
     <div class="card mb-3" id="silinecekOge" style="max-width: 100%;">
@@ -249,7 +244,7 @@
   document.getElementById("searcher").addEventListener("keyup", searchInDivs);
 
 function searchInDivs() {
-  let searchTerm = document.querySelector('#searcher').value.toLowerCase();
+ let searchTerm = document.querySelector('#searcher').value.toLowerCase();
 
  var divs = document.getElementsByTagName('div');
 
